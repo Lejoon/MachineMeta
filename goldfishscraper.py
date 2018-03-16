@@ -30,6 +30,7 @@ def recursive_search_format(format_url):
 
         urld = MTGSCRAPER_URL + link_f
 
+        #Convert deck names from "modern-deck-name-######" to "deck-name"
         deck_name = link_f.split('/')[-1]
         deck_name = deck_name.replace("modern-","")
         deck_name = deck_name.translate(None,digits)
@@ -47,7 +48,7 @@ def recursive_search_format(format_url):
             if row is not None:
                 deck_number = re.findall("\d+",row['href'])
 
-                # /deck/download/NUMBER
+                # Deck URL for download, eg /deck/download/NUMBER
                 all_links.append('/deck/download/' + deck_number[0])
 
 
