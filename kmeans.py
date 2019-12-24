@@ -1,3 +1,4 @@
+# Uses metagame.py
 
 km = dask_ml.cluster.KMeans(n_clusters=9, oversampling_factor=2)
 print('Done')
