@@ -1,5 +1,6 @@
 #%%
-#Read file and tournament structure into a list of decklists.
+# Uses metagame.py
+# Read file and tournament structure into a list of decklists.
 deck_dir = ROOT_DIR + '/' + 'Pioneer' + '/'
 
 main_path = glob.glob(deck_dir + "*")
